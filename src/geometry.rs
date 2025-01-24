@@ -46,6 +46,7 @@ use serde::{ser::SerializeMap, Deserialize, Deserializer, Serialize, Serializer}
 /// # test()
 /// ```
 #[derive(Clone, Debug, PartialEq)]
+#[cfg_attr(feature = "specta", derive(specta::Type))]
 pub enum Value {
     /// Point
     ///
@@ -259,6 +260,7 @@ impl Serialize for Value {
 /// let geom: geo_types::Geometry<f64> = geometry.try_into().unwrap();
 /// ```
 #[derive(Clone, Debug, PartialEq)]
+#[cfg_attr(feature = "specta", derive(specta::Type))]
 pub struct Geometry {
     /// Bounding Box
     ///

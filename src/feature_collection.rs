@@ -62,6 +62,7 @@ use serde::{Deserialize, Deserializer, Serialize, Serializer};
 /// assert_eq!(fc.features.len(), 10);
 /// ```
 #[derive(Clone, Debug, Default, PartialEq)]
+#[cfg_attr(feature = "specta", derive(specta::Type))]
 pub struct FeatureCollection {
     /// Bounding Box
     ///
