@@ -14,6 +14,7 @@
   `quick_collection` for conventional naming and simpler docs.
   * <https://github.com/georust/geojson/pulls/214>
 * Added `GeoJson::to_string_pretty` as convenience wrappers around the same `serde_json` methods.
+* Added [`specta`](https://github.com/specta-rs/specta) feature to support generating and exporting types to other languages (e.g. TypeScript).
 
 ## 0.24.1
 
