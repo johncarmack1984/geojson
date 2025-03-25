@@ -1,7 +1,9 @@
 # Changes
 
-## Unreleased
+## 0.24.2 - 2025-02-24
 
+* Add `to_feature` to convert a single S: Serialize to a Feature
+* Add `from_feature` to convert a single Feature to a D: Deserialize
 * Upgrade from thiserror v1 to v2
 * Add support of serializing optional `geo-types` with `serialize_optional_geometry`.
 * Add support of deserializing optional `geo-types` with `deserialize_optional_geometry`.
